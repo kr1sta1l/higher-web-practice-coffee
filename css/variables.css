@@ -1,0 +1,164 @@
+/* === ПОДКЛЮЧЕНИЕ ШРИФТОВ === */
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unbounded';
+  src: url('../assets/fonts/Unbounded-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* === ШРИФТЫ === */
+  --font-display: 'Unbounded', sans-serif;
+  --font-ui: 'Manrope', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* === ТИПОГРАФИКА === */
+  /* H1 Desktop */
+  --h1-desk-size: 64px;
+  --h1-desk-line: 64px;
+  --h1-desk-weight: 800;
+
+  /* H1 Tablet */
+  --h1-tab-size: 48px;
+  --h1-tab-line: 52px;
+  --h1-tab-weight: 800;
+
+  /* H1 Mobile */
+  --h1-mob-size: 36px;
+  --h1-mob-line: 40px;
+  --h1-mob-weight: 800;
+
+  /* H2 Desktop */
+  --h2-desk-size: 40px;
+  --h2-desk-line: 44px;
+  --h2-desk-weight: 700;
+
+  /* H2 Tablet */
+  --h2-tab-size: 32px;
+  --h2-tab-line: 36px;
+  --h2-tab-weight: 700;
+
+  /* H2 Mobile */
+  --h2-mob-size: 28px;
+  --h2-mob-line: 32px;
+  --h2-mob-weight: 700;
+
+  /* H3 Desktop */
+  --h3-desk-size: 28px;
+  --h3-desk-line: 32px;
+  --h3-desk-weight: 700;
+
+  /* Body 16 */
+  --body-size: 16px;
+  --body-line: 24px;
+  --body-weight: 400;
+
+  /* Small 14 */
+  --small-size: 14px;
+  --small-line: 20px;
+  --small-weight: 400;
+
+  /* Meta Mono 14 */
+  --meta-size: 14px;
+  --meta-line: 18px;
+  --meta-weight: 500;
+
+  /* Label Mono 12 */
+  --label-size: 12px;
+  --label-line: 16px;
+  --label-weight: 500;
+  --label-spacing: 0.02em;
+
+  /* Button 14 */
+  --button-size: 14px;
+  --button-line: 16px;
+  --button-weight: 600;
+  --button-spacing: 0.002em;
+
+  /* === ЦВЕТА === */
+  --color-paper: #FFF6E9;
+  --color-surface: #FFFFFF;
+  --color-ink: #0B0B0B;
+  --color-cobalt: #1E40FF;
+
+  /* === РАДИУСЫ === */
+  --radius-card: 12px;
+  --radius-panel: 16px;
+  --radius-pill: 999px;
+
+  /* === ОТСТУПЫ === */
+  --spacing-xs: 8px;
+  --spacing-s: 12px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+  --spacing-4xl: 96px;
+
+  /* === ТОЛЩИНА ЛИНИЙ === */
+  --border-thin: 1.5px;
+  --border-medium: 2px;
+  --border-thick: 3px;
+
+  /* === ТЕНИ === */
+  --shadow-button: 0px 8px 24px rgba(14, 23, 56, 0.08);
+}
+

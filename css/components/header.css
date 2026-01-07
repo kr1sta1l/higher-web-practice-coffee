@@ -1,0 +1,51 @@
+.header_menu_container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #1E40FF;
+}
+
+.header_menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.header_menu__item a {
+    font-family: Manrope;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    outline: none;
+    color: #1E40FF;
+    text-decoration: none;
+    box-shadow: 0 0 0 1px #1E40FF;
+    padding: 24px 16px;
+    transition: all 0.3s ease;
+    &:hover {
+        color: #1E40FF;
+        background-color: #1E40FF1A;
+        box-shadow: 0 0 0 1px #1E40FF;
+    }
+    &:active {  /* TODO: bug while clicking on the link */
+        color: #fff;
+        background-color: #1E40FF;
+        box-shadow: 0 0 0 1px #1E40FF;
+    }
+}
+
+.header_menu__active_item a {
+    color: #fff;
+    background-color: #1E40FF;
+    box-shadow: 0 0 0 1px #1E40FF;
+}
+
+.header__logo {
+    width: 28px;
+    height: 28px;
+}

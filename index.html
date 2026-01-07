@@ -8,7 +8,51 @@
     <title>Такт-кофе</title>
     <link
       rel="stylesheet"
-      href="./css/pages/main.css" />
+      href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./css/variables.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/h.css" />
+    <link
+      rel="stylesheet"
+      href="./css/common.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/header.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/button.css" />
+    <link
+      rel="stylesheet"
+      href="./css/pages/home.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="content_container">
+      <div class="header_menu_container">
+        <div class="header__logo">
+          <img src="./assets/images/logo.svg" alt="Логотип Такт-кофе" />
+        </div>
+        <ul class="header_menu">
+          <li class="header_menu__item header_menu__active_item"><a href="./menu.html">Меню</a></li>
+          <li class="header_menu__item"><a href="./promotions.html">Акции</a></li>
+          <li class="header_menu__item"><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="content_container">
+      <div class="quick_order_container">
+        <h1 class="h1_main">Такт-кофе</h1>
+        <h2 class="h2_main quick_order_h2">Экстракция под метроном.</h2>
+        <button class="button button--primary button--size-m">Выбрать напиток</button>
+        <img
+          class="main_image"
+          src="./assets/images/coffee_cycle_blueprint.png"
+          alt="Декоративная иллюстрация в стиле технического чертежа: круговой цикл
+            приготовления кофе из зёрен, кофемолки, рожка, чашки и кофемашины
+            с вентилятором в синем цвете." />
+      </div>
+    </main>
+  </body>
 </html>

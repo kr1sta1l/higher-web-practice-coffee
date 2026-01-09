@@ -14,7 +14,7 @@
       href="./css/variables.css" />
     <link
       rel="stylesheet"
-      href="./css/components/h.css" />
+      href="./css/components/text.css" />
     <link
       rel="stylesheet"
       href="./css/common.css" />
@@ -24,6 +24,12 @@
     <link
       rel="stylesheet"
       href="./css/components/button.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/advantage_cards.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/product_card.css" />
     <link
       rel="stylesheet"
       href="./css/pages/home.css" />
@@ -43,15 +49,117 @@
     </header>
     <main class="content_container">
       <div class="quick_order_container">
-        <h1 class="h1_main">Такт-кофе</h1>
-        <h2 class="h2_main quick_order_h2">Экстракция под метроном.</h2>
-        <button class="button button--primary button--size-m">Выбрать напиток</button>
-        <img
-          class="main_image"
-          src="./assets/images/coffee_cycle_blueprint.png"
-          alt="Декоративная иллюстрация в стиле технического чертежа: круговой цикл
-            приготовления кофе из зёрен, кофемолки, рожка, чашки и кофемашины
-            с вентилятором в синем цвете." />
+        <div class="quick_order_content">
+          <h1 class="h1_main">Такт-кофе</h1>
+          <h2 class="h2_main quick_order_h2">Экстракция под метроном.</h2>
+          <button class="button button--primary button--size-l order_button">Выбрать напиток</button>
+        </div>
+        <div class="quick_order_image">
+          <img
+            class="main_image"
+            src="./assets/images/coffee_cycle_blueprint.png"
+            alt="Декоративная иллюстрация в стиле технического чертежа: круговой цикл
+              приготовления кофе из зёрен, кофемолки, рожка, чашки и кофемашины
+              с вентилятором в синем цвете." />
+        </div>
+      </div>
+
+      <div class="advantages_container">
+        <h2 class="h2_main">Почему к нам</h2>
+        <div class="advantages_list">
+          <div class="advantage_item">
+            <div class="advantage_item__image_container">
+              <img class="advantage_item__image" src="./assets/images/advantages_notes.png">
+            </div>
+            <div class="advantage_item__content">
+              <h3 class="h3_main">Спецификация cтабильности</h3>
+              <p class="text_body">Калибруем помол и рецепты дважды в день.</p>
+            </div>
+          </div>
+          <div class="advantage_item">
+            <div class="advantage_item__image_container">
+              <img class="advantage_item__image" src="./assets/images/advantages_notes.png">
+            </div>
+            <div class="advantage_item__content">
+              <h3 class="h3_main">Малые партии обжарки</h3>
+              <p class="text_body">Обновляем зёрна еженедельно, ведём профили и даты. Без «усталого» кофе.</p>
+            </div>
+          </div>
+          <div class="advantage_item">
+            <div class="advantage_item__image_container">
+              <img class="advantage_item__image" src="./assets/images/advantages_notes.png">
+            </div>
+            <div class="advantage_item__content">
+              <h3 class="h3_main">Темп обслуживания</h3>
+              <p class="text_body">Утренний поток отрабатываем по регламенту. Средняя выдача — до 5 минут, чек-лист на баре.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- хиты недели -->
+      <div class="hits_container">
+        <h2 class="h2_main">Хиты недели</h2>
+        <div class="hits_list">
+          <div class="hits_item product_card">
+            <div class="product_card__image_container">
+              <img class="hits_item__image" src="./assets/images/products/triple_cups.png">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Капучино</h3>
+              <p class="label_mono">S 200 мл · M 300 · L 400</p>
+            </div>
+            <div class="product_card__stats">
+              <p class="meta_mono product_card__stats_item">DOSE 18 g</p>
+              <p class="meta_mono product_card__stats_item">YIELD 36 g</p>
+            </div>
+          </div>
+
+          <div class="hits_item product_card">
+            <div class="product_card__image_container">
+              <img class="hits_item__image" src="./assets/images/products/triple_cups.png">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Флэт уайт</h3>
+              <p class="label_mono">250 мл</p>
+            </div>
+            <div class="product_card__stats">
+              <p class="meta_mono product_card__stats_item">DOSE 18 g</p>
+              <p class="meta_mono product_card__stats_item">YIELD 36 g</p>
+              <p class="meta_mono product_card__stats_item">MICROFOAM</p>
+            </div>
+          </div>
+
+          <div class="hits_item product_card">
+            <div class="product_card__image_container">
+              <img class="hits_item__image" src="./assets/images/products/triple_cups.png">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Фильтр</h3>
+              <p class="label_mono">300 мл</p>
+            </div>
+            <div class="product_card__stats">
+              <p class="meta_mono product_card__stats_item">RATIO 1:16</p>
+              <p class="meta_mono product_card__stats_item">TEMP 92 °C</p>
+              <p class="meta_mono product_card__stats_item">BREW 2:30</p>
+            </div>
+          </div>
+
+          <div class="hits_item product_card">
+            <div class="product_card__image_container">
+              <img class="hits_item__image" src="./assets/images/products/triple_cups.png">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Американо</h3>
+              <p class="label_mono">S 200 мл · M 300 · L 400</p>
+            </div>
+            <div class="product_card__stats">
+              <p class="meta_mono product_card__stats_item">ESP 18 g</p>
+              <p class="meta_mono product_card__stats_item">WATER 180–320 ml</p>
+            </div>
+          </div>
+
+        </div>
       </div>
     </main>
   </body>

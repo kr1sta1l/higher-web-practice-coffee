@@ -1,7 +1,7 @@
 /* === ПОДКЛЮЧЕНИЕ ШРИФТОВ === */
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-ExtraLight.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-Light.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-Medium.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -33,7 +33,7 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-SemiBold.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -41,7 +41,7 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -49,7 +49,7 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-ExtraBold.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -57,8 +57,96 @@
 
 @font-face {
   font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded-Black.ttf') format('truetype');
+  src: url('../assets/fonts/Unbounded/Unbounded-Black.ttf') format('truetype');
   font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonts/Manrope/Manrope-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Mono';
+  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-Bold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -105,6 +193,16 @@
   --h3-desk-line: 32px;
   --h3-desk-weight: 700;
 
+  /* H3 Tablet */
+  --h3-tab-size: 28px;
+  --h3-tab-line: 32px;
+  --h3-tab-weight: 700;
+
+  /* H3 Mobile */
+  --h3-mob-size: 28px;
+  --h3-mob-line: 32px;
+  --h3-mob-weight: 700;
+
   /* Body 16 */
   --body-size: 16px;
   --body-line: 24px;
@@ -118,18 +216,18 @@
   /* Meta Mono 14 */
   --meta-size: 14px;
   --meta-line: 18px;
-  --meta-weight: 500;
+  --meta-weight: 400;
 
   /* Label Mono 12 */
   --label-size: 12px;
   --label-line: 16px;
-  --label-weight: 500;
+  --label-weight: 400;
   --label-spacing: 0.02em;
 
   /* Button 14 */
   --button-size: 14px;
   --button-line: 16px;
-  --button-weight: 600;
+  --button-weight: 500;
   --button-spacing: 0.002em;
 
   /* === ЦВЕТА === */

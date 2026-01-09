@@ -13,7 +13,7 @@
   /* Typography */
   font-family: var(--font-ui);
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--button-weight);
   font-size: var(--button-size);
   line-height: var(--button-line);
   letter-spacing: var(--button-spacing);

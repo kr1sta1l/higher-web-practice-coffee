@@ -1,8 +1,62 @@
 .quick_order_container {
-    margin: 274px 0;
+    margin: 125px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
 }
 
 .quick_order_h2 {
     display: inline-block;
     max-width: 11ch;
+    margin-top: 25px;
+}
+
+.order_button {
+    margin-top: 25px;
+}
+
+.quick_order_image {
+    position: relative;
+    overflow: visible;
+}
+
+.main_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    rotate: 0.22deg;
+    transform: scale(1.82) translate(15px, -26px);
+}
+
+
+.advantages_container {
+    margin-top: 185px;
+}
+
+.advantages_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-top: 24px;
+}
+
+
+.hits_container {
+    margin-top: 128px;
+}
+
+.hits_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-top: 24px;
+}
+
+.hits_item__image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /* display: none; */
 }

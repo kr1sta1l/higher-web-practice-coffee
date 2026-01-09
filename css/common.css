@@ -1,5 +1,24 @@
 .content_container {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 150px;    
+    padding: 0 363px;    
+    /* padding: 0 auto; */
+}
+
+.content_container:first-child {
+    padding-top: 4px;
+}
+
+/* Tablet (от 704px) */
+@media (min-width: 704px) {
+    .content_container {
+        padding: 0 128px;
+    }
+}
+
+/* Desktop (от 1024px, до 1920px) */
+@media (min-width: 1024px) {
+    .content_container {
+        padding: 0 363px;
+    }
 }

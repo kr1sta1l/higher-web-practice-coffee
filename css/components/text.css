@@ -1,34 +1,30 @@
-/* === ЗАГОЛОВКИ (Unbounded) === */
-
-/* Базовые стили (Mobile от 328px) */
 .h1_main {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-display);
+  font-weight: var(--h1-mob-weight);
   font-size: var(--h1-mob-size);
   line-height: var(--h1-mob-line);
-  font-weight: var(--h1-mob-weight);
-  color: var(--color-ink);
-  margin: 0;
 }
 
 .h2_main {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-display);
+  font-weight: var(--h2-mob-weight);
   font-size: var(--h2-mob-size);
   line-height: var(--h2-mob-line);
-  font-weight: var(--h2-mob-weight);
-  color: var(--color-ink);
-  margin: 0;
 }
 
 .h3_main {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-display);
+  font-weight: var(--h3-mob-weight);
   font-size: var(--h3-mob-size);
   line-height: var(--h3-mob-line);
-  font-weight: var(--h3-mob-weight);
-  color: var(--color-ink);
-  margin: 0;
 }
 
-/* Tablet (от 704px) */
 @media (min-width: 704px) {
   .h1_main {
     font-size: var(--h1-tab-size);
@@ -46,7 +42,6 @@
   }
 }
 
-/* Desktop (от 1024px, до 1920px) */
 @media (min-width: 1024px) {
   .h1_main {
     font-size: var(--h1-desk-size);
@@ -64,51 +59,43 @@
   }
 }
 
-/* === UI ТИПОГРАФИКА (Manrope) === */
-
-/* Body / 16 16/24 • 400 */
 .text_body {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-ui);
+  font-weight: var(--body-weight);
   font-size: var(--body-size);
   line-height: var(--body-line);
-  font-weight: var(--body-weight);
   letter-spacing: 0;
-  color: var(--color-ink);
-  margin: 0;
 }
 
-/* Small / 14 14/20 • 400 */
 .text_small {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-ui);
+  font-weight: var(--small-weight);
   font-size: var(--small-size);
   line-height: var(--small-line);
-  font-weight: var(--small-weight);
   letter-spacing: 0;
-  color: var(--color-ink);
-  margin: 0;
 }
 
-/* === ТЕХ-ЛЕЙБЛЫ (IBM Plex Mono) === */
-
-/* Label / Mono 12 12/16 • 500 • UPPER • letter-spacing 2% */
 .label_mono {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-mono);
+  font-weight: var(--label-weight);
   font-size: var(--label-size);
   line-height: var(--label-line);
-  font-weight: var(--label-weight);
   letter-spacing: var(--label-spacing);
   text-transform: uppercase;
-  color: var(--color-ink);
-  margin: 0;
 }
 
-/* Meta / Mono 14 14/18 • 400 */
 .meta_mono {
+  margin: 0;
+  color: var(--color-ink);
   font-family: var(--font-mono);
+  font-weight: var(--meta-weight);
   font-size: var(--meta-size);
   line-height: var(--meta-line);
-  font-weight: var(--meta-weight);
   letter-spacing: 0;
-  color: var(--color-ink);
-  margin: 0;
 }

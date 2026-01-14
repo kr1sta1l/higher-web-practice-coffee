@@ -8,7 +8,281 @@
     <title>Меню</title>
     <link
       rel="stylesheet"
+      href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./css/variables.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/text.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/buttons.css" />
+    <link
+      rel="stylesheet"
+      href="./css/common.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/header.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/footer.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/product_card.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/item_list.css" />
+    <link
+      rel="stylesheet"
       href="./css/pages/menu.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="content_container">
+      <div class="header_menu_container">
+        <a class="header__logo-link" href="./index.html">
+          <img class="header__logo" src="./assets/images/logo.png" alt="Логотип Такт-кофе" />
+        </a>
+        <nav>
+          <ul class="header_menu">
+            <li class="header_menu__item header_menu__active_item"><a href="./menu.html">Меню</a></li>
+            <li class="header_menu__item"><a href="./promotions.html">Акции</a></li>
+            <li class="header_menu__item"><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--burger" src="./assets/images/icons/burger.svg" alt="" />
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--close" src="./assets/images/icons/close.svg" alt="" />
+        </button>
+      </div>
+      <nav class="header__mobile-menu" aria-hidden="true">
+        <ul class="header__mobile-menu-list">
+          <li class="header__mobile-menu-item"><a href="./index.html">Главная</a></li>
+          <li class="header__mobile-menu-item"><a href="./menu.html">Меню</a></li>
+          <li class="header__mobile-menu-item"><a href="./promotions.html">Акции</a></li>
+          <li class="header__mobile-menu-item"><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content_container">
+        <h1 class="h1_main">Меню</h1>
+        <nav class="coffe_types_list">
+          <a class="label_mono link-as-button coffe_types_list__item" href="#espresso-bar">Эспрессо-бар</a>
+          <a class="label_mono link-as-button coffe_types_list__item" href="#filter">Фильтр</a>
+          <a class="label_mono link-as-button coffe_types_list__item" href="#author">Авторские</a>
+          <a class="label_mono link-as-button coffe_types_list__item" href="#cold">Холодные</a>
+        </nav>
+      </div>
+
+      <div class="content_container">
+        <h2 class="h2_main" id="espresso-bar">Эспрессо-бар</h2>
+        <div class="product_list product_list--menu">
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/espresso/espresso.png" alt="Эспрессо">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Эспрессо</h3>
+              <p class="meta_mono">Арабика 100%; 30 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">150 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">FYIELD 36 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">RATIO 1:2</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">TEMP 93 °C</p>
+            </div>
+          </div>
+
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/espresso/americano.png" alt="Американо">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Американо</h3>
+              <p class="meta_mono">S 200 мл · M 300 · L 400</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">S — 230 ₽ · M–260 ₽ · L–290 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">ESP 18 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">WATER 180–320 ml</p>
+            </div>
+          </div>
+          
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/espresso/cappuccino.png" alt="Капучино">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Капучино</h3>
+              <p class="label_mono">S 200 мл · M 300 · L 400</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">S 230 ₽ · M 260 ₽ · L 290 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">DOSE 18 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">YIELD 36 g</p>
+            </div>
+          </div>
+
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/espresso/flat_white.png" alt="Флэт уайт">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Флэт уайт</h3>
+              <p class="label_mono">250 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">250 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">DOSE 18 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">YIELD 36 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">MICROFOAM</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="content_container content_container__next_section">
+        <h2 class="h2_main" id="filter">Фильтр</h2>
+        <div class="product_list product_list--menu">
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/coffee_filter/filter.png" alt="Фильтр-кофе">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Фильтр-кофе</h3>
+              <p class="meta_mono">300 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">220 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">RATIO 1:16</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">TEMP 92 °C</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">BREW 2:30</p>
+            </div>
+          </div>
+
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/coffee_filter/v60.png" alt="V60">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">V60</h3>
+              <p class="meta_mono">300 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">260 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">DOSE 18 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">POUR 3</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">BLOOM 30 s</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_container content_container__next_section">
+        <h2 class="h2_main" id="author">Авторские</h2>
+        <div class="product_list product_list--menu">
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/author/espresso_tonic.png" alt="Эспрессо-тоник">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Эспрессо-тоник</h3>
+              <p class="meta_mono">300 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">290 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">ESP 18 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">TONIC 200 ml</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">ICE</p>
+            </div>
+          </div>
+
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/author/raf_vanilla.png">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Раф ваниль</h3>
+              <p class="meta_mono">300 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">320 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">ESP 18 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">MILK 200 ml</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">SYRUP 10 ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_container content_container__next_section">
+        <h2 class="h2_main" id="cold">Холодные</h2>
+        <div class="product_list product_list--menu">
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/cold/cold_brew_cherry.png" alt="Колдбрю «Вишня»">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Колдбрю «Вишня»</h3>
+              <p class="meta_mono">250 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">330 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">BREW 12 h</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">BOTTLE 250 ml</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">CHERRY</p>
+            </div>
+          </div>
+
+          <div class="product_card">
+            <div class="product_card__image_container product_card__image_container--menu">
+              <img class="product_item__image" src="./assets/images/products/author/raf_vanilla.png" alt="Матча латте">
+            </div>
+            <div class="product_card__content">
+              <h3 class="h3_main">Матча латте</h3>
+              <p class="meta_mono">300 мл</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__single_item meta_mono">310 ₽</p>
+            </div>
+            <div class="short_info_list__container">
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">MATCHA 2 g</p>
+              <p class="short_info_list__item short_info_list__item--product_card label_mono">MILK 200 ml</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="content_container">
+      <nav class="footer_menu_container">
+        <a class="footer_menu__item text_small" href="./contacts.html#addresses">Адреса/часы</a>
+        <a class="footer_menu__item text_small" href="./contacts.html#contact">Быстрые ссылки</a>
+        <a class="footer_menu__item text_small" href="#">Копирайт</a>
+      </nav>
+    </footer>
+    <script src="./js/mobile_menu.js"></script>
+  </body>
 </html>

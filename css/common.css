@@ -1,24 +1,21 @@
 .content_container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 363px;    
-    /* padding: 0 auto; */
+    max-width: 1140px;
+    margin: var(--spacing-3xl) auto;
 }
 
-.content_container:first-child {
-    padding-top: 4px;
+.content_container__next_section {
+    margin-top: 128px;
 }
 
-/* Tablet (от 704px) */
-@media (min-width: 704px) {
-    .content_container {
-        padding: 0 128px;
-    }
+header.content_container {
+    margin-top: 0;
 }
 
-/* Desktop (от 1024px, до 1920px) */
-@media (min-width: 1024px) {
-    .content_container {
-        padding: 0 363px;
-    }
+footer.content_container {
+    margin-bottom: 0;
+}
+
+.text_break::before {
+    content: "\A";
+    white-space: pre;
 }

@@ -1,0 +1,17 @@
+.short_info_list__container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    box-sizing: border-box;
+}
+
+.short_info_list__item {
+    box-sizing: border-box;
+    border: var(--border-thin) solid var(--color-paper);
+    border-right: none;
+}
+
+.short_info_list__item:last-child {
+    box-sizing: border-box;
+    border-right: 1px solid var(--color-paper);
+}

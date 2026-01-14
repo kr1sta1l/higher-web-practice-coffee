@@ -1,0 +1,90 @@
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.accordion--faq {
+  margin-top: var(--spacing-l);
+}
+
+.accordion__item {
+  width: 100%;
+  border: var(--border-thin) solid var(--color-cobalt);
+  overflow: hidden;
+  background: var(--color-surface);
+  transition: all 0.3s ease;
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: none;
+}
+
+.accordion__button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: var(--spacing-m) var(--spacing-m);
+  color: var(--color-ink);
+
+  font-family: var(--font-ui);
+  font-weight: var(--body-weight);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  letter-spacing: 0;
+  text-align: left;
+  background: var(--color-surface);
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.accordion__button:hover {
+  background: var(--color-paper);
+}
+
+.accordion__button:focus {
+  outline-offset: -2px;
+}
+
+.accordion__item[aria-expanded='true'] .accordion__button,
+.accordion__item.accordion__item--open .accordion__button {
+  border-bottom: var(--border-thin) solid var(--color-paper);
+}
+
+.accordion__button::after {
+  content: '';
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url("../../assets/images/icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: transform 0.3s ease;
+  transform: rotate(-90deg);
+}
+
+.accordion__item[aria-expanded='true'] .accordion__button::after,
+.accordion__item.accordion__item--open .accordion__button::after {
+  transform: rotate(90deg);
+}
+
+.accordion__panel {
+  max-height: 0;
+  padding: 0 var(--spacing-m);
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion__item[aria-expanded='true'] .accordion__panel,
+.accordion__item.accordion__item--open .accordion__panel {
+  max-height: 2000px;
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+}

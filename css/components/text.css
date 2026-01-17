@@ -1,0 +1,101 @@
+.h1_main {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: var(--h1-mob-weight);
+  font-size: var(--h1-mob-size);
+  line-height: var(--h1-mob-line);
+}
+
+.h2_main {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: var(--h2-mob-weight);
+  font-size: var(--h2-mob-size);
+  line-height: var(--h2-mob-line);
+}
+
+.h3_main {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-weight: var(--h3-mob-weight);
+  font-size: var(--h3-mob-size);
+  line-height: var(--h3-mob-line);
+}
+
+@media (min-width: 704px) {
+  .h1_main {
+    font-size: var(--h1-tab-size);
+    line-height: var(--h1-tab-line);
+  }
+
+  .h2_main {
+    font-size: var(--h2-tab-size);
+    line-height: var(--h2-tab-line);
+  }
+
+  .h3_main {
+    font-size: var(--h3-tab-size);
+    line-height: var(--h3-tab-line);
+  }
+}
+
+@media (min-width: 1024px) {
+  .h1_main {
+    font-size: var(--h1-desk-size);
+    line-height: var(--h1-desk-line);
+  }
+
+  .h2_main {
+    font-size: var(--h2-desk-size);
+    line-height: var(--h2-desk-line);
+  }
+
+  .h3_main {
+    font-size: var(--h3-desk-size);
+    line-height: var(--h3-desk-line);
+  }
+}
+
+.text_body {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-weight: var(--body-weight);
+  font-size: var(--body-size);
+  line-height: var(--body-line);
+  letter-spacing: 0;
+}
+
+.text_small {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-weight: var(--small-weight);
+  font-size: var(--small-size);
+  line-height: var(--small-line);
+  letter-spacing: 0;
+}
+
+.label_mono {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-weight: var(--label-weight);
+  font-size: var(--label-size);
+  line-height: var(--label-line);
+  letter-spacing: var(--label-spacing);
+  text-transform: uppercase;
+}
+
+.meta_mono {
+  margin: 0;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+  font-weight: var(--meta-weight);
+  font-size: var(--meta-size);
+  line-height: var(--meta-line);
+  letter-spacing: 0;
+}

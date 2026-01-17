@@ -1,0 +1,21 @@
+.content_container {
+    max-width: 1140px;
+    margin: var(--spacing-3xl) auto;
+}
+
+.content_container__next_section {
+    margin-top: 128px;
+}
+
+header.content_container {
+    margin-top: 0;
+}
+
+footer.content_container {
+    margin-bottom: 0;
+}
+
+.text_break::before {
+    content: "\A";
+    white-space: pre;
+}

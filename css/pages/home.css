@@ -1,0 +1,205 @@
+.quick_order_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+    margin-top: 125px;
+}
+
+.quick_order_content {
+    position: relative;
+    z-index: 1;
+}
+
+.quick_order_h2 {
+    display: inline-block;
+    max-width: 11ch;
+    margin-top: 25px;
+}
+
+.order_button {
+    width: fit-content;
+    margin-top: 25px;
+    padding-right: 23.5px;
+    padding-left: 23.5px;
+}
+
+.quick_order_image {
+    position: relative;
+    overflow: visible;
+}
+
+.main_image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: scale(1.82) translate(15px, -26px);
+    rotate: 0.22deg;
+}
+
+
+.advantages_container {
+    margin-top: 185px;
+}
+
+.advantages_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-top: var(--spacing-l);
+}
+
+.hits_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin-top: var(--spacing-l);
+}
+
+@media (max-width: 327px) {
+    .hits_list .product_card {
+        flex: 0 1 100%;
+    }
+
+    .advantages_list .advantage_item {
+        flex: 0 1 100%;
+    }
+}
+
+@media (min-width: 328px) and (max-width: 703px) {
+    .hits_list .product_card {
+        flex: 0 1 100%;
+    }
+
+    .advantages_list .advantage_item {
+        flex: 0 1 100%;
+    }
+}
+
+@media (min-width: 704px) and (max-width: 1919px) {
+    .hits_list .product_card {
+        flex: 0 1 calc(50% - 10.5px);
+    }
+
+    .advantages_list .advantage_item {
+        flex: 0 1 calc(50% - 10.5px);
+    }
+}
+
+@media (min-width: 1920px) {
+    .hits_list .product_card {
+        flex: 0 1 calc(25% - 15.75px);
+    }
+
+    .order_button {
+        padding-right: 21.5px;
+        padding-left: 21.5px;
+    }
+}
+
+.about_us_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-l);
+    margin-top: 128px;
+}
+
+.about_us__text {
+    max-width: 75ch;
+    margin-top: var(--spacing-l);
+}
+
+.about_us__image_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--border-thin) solid var(--color-cobalt);
+    padding: 10.5px 17px;
+    background-image: linear-gradient(to right, color-mix(in srgb, var(--color-paper) 30%, transparent) 1px, transparent 1px),
+        linear-gradient(to bottom, color-mix(in srgb, var(--color-paper) 30%, transparent) 1px, transparent 1px);
+    background-size: 8px 8px;
+}
+
+.about_us__image {
+    width: 427px;
+    height: 279px;
+}
+
+.short_info_list__container--home {
+    margin-top: var(--spacing-l);
+}
+
+.short_info_list__item--home {
+    flex: 1;
+    width: 100%;
+    padding: var(--spacing-s) 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .quick_order_container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-l);
+    }
+
+    .quick_order_image {
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .quick_order_content {
+        order: 1;
+    }
+
+    .main_image {
+        width: 328px;
+        height: 328px;
+        transform: none;
+        rotate: 0deg;
+    }
+
+    .about_us_container {
+        flex-direction: column;
+    }
+
+    .about_us__image_container {
+        order: 2;
+        box-sizing: border-box;
+        width: 100%;
+        margin-top: var(--spacing-l);
+        padding: 0;
+    }
+
+    .about_us__image {
+        width: 100%;
+    }
+
+    .about_us__content {
+        order: 1;
+    }
+
+    .short_info_list__container--home {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border: var(--border-thin) solid var(--color-paper);
+    }
+
+    .short_info_list__item--home {
+        flex: none;
+        border: none;
+        border-right: var(--border-thin) solid var(--color-paper);
+        border-bottom: var(--border-thin) solid var(--color-paper);
+    }
+
+    .short_info_list__item--home:nth-child(2n) {
+        border-right: none;
+    }
+
+    .short_info_list__item--home:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+    
+}

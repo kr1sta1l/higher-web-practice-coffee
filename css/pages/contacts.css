@@ -1,0 +1,92 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.contacts_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-l);
+    margin-top: var(--spacing-l);
+}
+
+
+.contacts_container__image_container {
+    gap: var(--spacing-s);
+    width: 655;
+    height: 388;
+    border: var(--border-thin) solid var(--color-cobalt);
+    padding: var(--spacing-m);
+    opacity: 1;
+    background-image: linear-gradient(to right, color-mix(in srgb, var(--color-paper) 30%, transparent) 1px, transparent 1px),
+        linear-gradient(to bottom, color-mix(in srgb, var(--color-paper) 30%, transparent) 1px, transparent 1px);
+    background-size: 8px 8px;
+
+}
+
+.contacts_container__image {
+    position: relative;
+    max-width: 490px;
+    max-height: 381px;
+    object-fit: contain;
+}
+
+.contacts_container__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--spacing-l);
+    height: 100%;
+}
+
+.short_info_list__item--contacts {
+    padding: var(--spacing-xs) 10px;
+}
+
+.contacts_container__content__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-m);
+}
+
+@media (max-width: 768px) {
+    .contacts_container {
+        flex-direction: column;
+    }
+
+    .contacts_container__image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .contacts_container__image {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .contacts_container__content__buttons {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contacts_container__content__buttons .button {
+        width: 100%;
+    }
+
+    .contacts_container__content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content_container__next_section {
+        display: none;
+    }
+}

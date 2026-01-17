@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.coffe_types_list {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
+    border-bottom: var(--border-thin) solid var(--color-paper);
+    padding: 20px 0;
+}
+
+.product_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-l);
+    margin-top: var(--spacing-l);
+}
+
+.coffe_types_list__item:hover {
+    color: var(--color-cobalt);
+    text-decoration: underline;
+}
+
+.product_list--menu .product_card {
+    flex: 0 1 100%;
+}
+
+.product_card__image_container--menu {
+    padding-top: 20px;
+    padding-bottom: 43px;
+}
+
+.product_card__image_container--menu img {
+    width: 310px;
+    height: 289px;
+}
+
+@media (min-width: 704px) and (max-width: 1919px) {
+    .product_list--menu .product_card {
+        flex: 0 1 calc(50% - 10.5px);
+        max-width: calc(50% - 12px);
+        height: auto;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .product_list--menu .product_card {
+        flex: 0 1 calc(33.333% - 16px);
+    }
+}
+
+@media (min-width: 328px) and (max-width: 703px) {
+    .product_list--menu .product_card {
+        flex: 0 1 100%;
+    }
+}

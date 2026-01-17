@@ -8,7 +8,236 @@
     <title>Контакты</title>
     <link
       rel="stylesheet"
+      href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="./css/pages/contacts.css" />
+    <link
+      rel="stylesheet"
+      href="./css/variables.css" />
+    <link
+      rel="stylesheet"
+      href="./css/common.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/text.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/item_list.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/header.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/accordion.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/buttons.css" />
+    <link
+      rel="stylesheet"
+      href="./css/components/footer.css" />
+    <link
+      rel="stylesheet"
       href="./css/pages/contacts.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="content_container">
+      <div class="header_menu_container">
+        <a class="header__logo-link" href="./index.html">
+          <img class="header__logo" src="./assets/images/logo.png" alt="Логотип Такт-кофе" />
+        </a>
+        <nav>
+          <ul class="header_menu">
+            <li class="header_menu__item"><a href="./menu.html">Меню</a></li>
+            <li class="header_menu__item"><a href="./promotions.html">Акции</a></li>
+            <li class="header_menu__item header_menu__active_item"><a href="./contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <button class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--burger" src="./assets/images/icons/burger.svg" alt="" />
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--close" src="./assets/images/icons/close.svg" alt="" />
+        </button>
+      </div>
+      <nav class="header__mobile-menu" aria-hidden="true">
+        <ul class="header__mobile-menu-list">
+          <li class="header__mobile-menu-item"><a href="./index.html">Главная</a></li>
+          <li class="header__mobile-menu-item"><a href="./menu.html">Меню</a></li>
+          <li class="header__mobile-menu-item"><a href="./promotions.html">Акции</a></li>
+          <li class="header__mobile-menu-item"><a href="./contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content_container">
+      <div class="content_container">
+        <h1 class="h1_main">Контакты</h1>
+        <div class="contacts_container">
+          <div class="contacts_container__image_container">
+            <img
+              src="./assets/images/contacts/map.png"
+              class="contacts_container__image"
+              alt="Схематичное изображение расположения кофейни на карте" />
+          </div>
+          <div class="contacts_container__content">
+            <div class="contacts_container__content__item">
+              <h2 class="h3_main" id="addresses">Адрес</h2>
+              <p class="text_body">ул. Примерная, 12 (вход со двора)</p>
+              <div class="short_info_list__container">
+                <p class="short_info_list__item short_info_list__item--contacts label_mono">METRO 5 min</p>
+                <p class="short_info_list__item short_info_list__item--contacts label_mono">BIKE RACK</p>
+                <p class="short_info_list__item short_info_list__item--contacts label_mono">PETS OK</p>
+                <p class="short_info_list__item short_info_list__item--contacts label_mono">SMALL BATCH</p>
+              </div>
+            </div>
+            <div class="contacts_container__content__item">
+              <h2 class="h3_main">Часы работы</h2>
+              <p class="text_body">Будни 08:00–21:00 · Выходные 09:00–21:00</p>
+              <div class="short_info_list__container">
+                <p class="short_info_list__item short_info_list__item--contacts label_mono">PEAK 8–11</p>
+                <p class="short_info_list__item short_info_list__item--contacts label_mono">ROAST DAY — Чт</p>
+              </div>
+            </div>
+            <div class="contacts_container__content__item">
+              <h2 class="h3_main" id="contact">Связь</h2>
+              <p class="text_body">+7 999 123-45-67</p>
+            </div>
+
+            <div class="contacts_container__content__item contacts_container__content__buttons">
+              <a href="tel:+79991234567" class="button button--primary button--size-l link-as-button">Позвонить</a>
+              <a href="https://yandex.ru/maps/-/CLdYU2kv" target="_blank" rel="noopener noreferrer" class="button button--secondary button--size-l link-as-button">Открыть в картах</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content_container content_container__next_section">
+        <h2 class="h2_main">Ответы на вопросы</h2>
+        <div class="accordion accordion--faq">
+          <div class="accordion__item">
+              <button 
+                  class="accordion__button text_body"
+                  aria-expanded="false"
+                  aria-controls="accordion-panel-contacts-0"
+                  id="accordion-button-contacts-0"
+              >        
+                  Альтернативное молоко есть?
+              </button>
+              <div 
+                  class="accordion__panel" 
+                  role="region"
+                  aria-labelledby="accordion-button-contacts-0"
+                  id="accordion-panel-contacts-0"
+              >
+                  <p class="text_small">Овсяное +30 ₽, кокос/миндаль +40 ₽.</p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <button 
+                  class="accordion__button text_body"
+                  aria-expanded="false"
+                  aria-controls="accordion-panel-contacts-1"
+                  id="accordion-button-contacts-1"
+              >        
+                  Можно с собакой?
+              </button>
+              <div 
+                  class="accordion__panel" 
+                  role="region"
+                  aria-labelledby="accordion-button-contacts-1"
+                  id="accordion-panel-contacts-1"
+              >
+                  <p class="text_small">Да, вода и миска у стойки.</p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <button 
+                  class="accordion__button text_body"
+                  aria-expanded="false"
+                  aria-controls="accordion-panel-contacts-2"
+                  id="accordion-button-contacts-2"
+              >        
+                  Работа с ноутбуком?
+              </button>
+              <div 
+                  class="accordion__panel" 
+                  role="region"
+                  aria-labelledby="accordion-button-contacts-2"
+                  id="accordion-panel-contacts-2"
+              >
+                  <p class="text_small">Да, розетки у стены, Wi-Fi открыт.</p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <button 
+                  class="accordion__button text_body"
+                  aria-expanded="false"
+                  aria-controls="accordion-panel-contacts-3"
+                  id="accordion-button-contacts-3"
+              >        
+                  Громко ли у нас?
+              </button>
+              <div 
+                  class="accordion__panel" 
+                  role="region"
+                  aria-labelledby="accordion-button-contacts-3"
+                  id="accordion-panel-contacts-3"
+              >
+                  <p class="text_small">С 8:00 до 11:00 тише, после — город в темпе.</p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <button 
+                  class="accordion__button text_body"
+                  aria-expanded="false"
+                  aria-controls="accordion-panel-contacts-4"
+                  id="accordion-button-contacts-4"
+              >        
+                  Свой стакан?
+              </button>
+              <div 
+                  class="accordion__panel" 
+                  role="region"
+                  aria-labelledby="accordion-button-contacts-4"
+                  id="accordion-panel-contacts-4"
+              >
+                  <p class="text_small">−10 ₽ и спасибо планете.</p>
+              </div>
+          </div>
+
+          <div class="accordion__item">
+              <button 
+                  class="accordion__button text_body"
+                  aria-expanded="false"
+                  aria-controls="accordion-panel-contacts-5"
+                  id="accordion-button-contacts-5"
+              >        
+                  Оплата?
+              </button>
+              <div 
+                  class="accordion__panel" 
+                  role="region"
+                  aria-labelledby="accordion-button-contacts-5"
+                  id="accordion-panel-contacts-5"
+              >
+                  <p class="text_small">Карта/QR/наличные.</p>
+              </div>
+          </div>
+        </div> 
+      </div>
+    </main>
+
+    <footer class="content_container">
+      <nav class="footer_menu_container">
+        <a class="footer_menu__item text_small" href="./contacts.html#addresses">Адреса/часы</a>
+        <a class="footer_menu__item text_small" href="./contacts.html#contact">Быстрые ссылки</a>
+        <a class="footer_menu__item text_small" href="#">Копирайт</a>
+      </nav>
+    </footer>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/mobile_menu.js"></script>
+  </body>
 </html>

@@ -1,216 +1,75 @@
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Unbounded';
-  src: url('../assets/fonts/Unbounded/Unbounded-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-ExtraLight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-Light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Manrope';
-  src: url('../assets/fonts/Manrope/Manrope-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'IBM Plex Mono';
-  src: url('../assets/fonts/IBMPlexMono/IBMPlexMono-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
 :root {
   --font-display: 'Unbounded', sans-serif;
   --font-ui: 'Manrope', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 
-  --h1-desk-size: 64px;
-  --h1-desk-line: 64px;
-  --h1-desk-weight: 800;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-800: 800;
 
-  --h1-tab-size: 48px;
-  --h1-tab-line: 52px;
-  --h1-tab-weight: 800;
+  --s-1-5: 1.5px;
+  --s-2: 2px;
+  --s-8: 8px;
+  --s-12: 12px;
+  --s-14: 14px;
+  --s-16: 16px;
+  --s-18: 18px;
+  --s-20: 20px;
+  --s-24: 24px;
+  --s-28: 28px;
+  --s-32: 32px;
+  --s-36: 36px;
+  --s-40: 40px;
+  --s-44: 44px;
+  --s-48: 48px;
+  --s-52: 52px;
+  --s-64: 64px;
 
-  --h1-mob-size: 36px;
-  --h1-mob-line: 40px;
-  --h1-mob-weight: 800;
+  --h1-size-desk: var(--s-64);
+  --h1-line-desk: var(--s-64);
+  --h1-size-tab: var(--s-48);
+  --h1-line-tab: var(--s-52);
+  --h1-size-mob: var(--s-36);
+  --h1-line-mob: var(--s-40);
+  --h1-weight: var(--fw-800);
 
-  --h2-desk-size: 40px;
-  --h2-desk-line: 44px;
-  --h2-desk-weight: 700;
+  --h2-size-desk: var(--s-40);
+  --h2-line-desk: var(--s-44);
+  --h2-size-tab: var(--s-32);
+  --h2-line-tab: var(--s-36);
+  --h2-size-mob: var(--s-28);
+  --h2-line-mob: var(--s-32);
+  --h2-weight: var(--fw-700);
 
-  --h2-tab-size: 32px;
-  --h2-tab-line: 36px;
-  --h2-tab-weight: 700;
+  --h3-size-desk: var(--s-28);
+  --h3-line-desk: var(--s-32);
+  --h3-size-tab: var(--s-28);
+  --h3-line-tab: var(--s-32);
+  --h3-size-mob: var(--s-28);
+  --h3-line-mob: var(--s-32);
+  --h3-weight: var(--fw-700);
 
-  --h2-mob-size: 28px;
-  --h2-mob-line: 32px;
-  --h2-mob-weight: 700;
+  --body-size: var(--s-16);
+  --body-line: var(--s-24);
+  --body-weight: var(--fw-400);
 
-  --h3-desk-size: 28px;
-  --h3-desk-line: 32px;
-  --h3-desk-weight: 700;
+  --small-size: var(--s-14);
+  --small-line: var(--s-20);
+  --small-weight: var(--fw-400);
 
-  --h3-tab-size: 28px;
-  --h3-tab-line: 32px;
-  --h3-tab-weight: 700;
+  --meta-size: var(--s-14);
+  --meta-line: var(--s-18);
+  --meta-weight: var(--fw-400);
 
-  --h3-mob-size: 28px;
-  --h3-mob-line: 32px;
-  --h3-mob-weight: 700;
-
-  --body-size: 16px;
-  --body-line: 24px;
-  --body-weight: 400;
-
-  --small-size: 14px;
-  --small-line: 20px;
-  --small-weight: 400;
-
-  --meta-size: 14px;
-  --meta-line: 18px;
-  --meta-weight: 400;
-
-  --label-size: 12px;
-  --label-line: 16px;
-  --label-weight: 400;
+  --label-size: var(--s-12);
+  --label-line: var(--s-16);
+  --label-weight: var(--fw-400);
   --label-spacing: 0.02em;
 
-  --button-size: 14px;
-  --button-line: 16px;
-  --button-weight: 500;
+  --button-size: var(--s-14);
+  --button-line: var(--s-16);
+  --button-weight: var(--fw-500);
   --button-spacing: 0.002em;
 
   --color-paper: #FFF6E9;
@@ -218,23 +77,17 @@
   --color-ink: #0B0B0B;
   --color-cobalt: #1E40FF;
 
-  --radius-card: 12px;
-  --radius-panel: 16px;
-  --radius-pill: 999px;
+  --radius-card: var(--s-12);
 
-  --spacing-xs: 8px;
-  --spacing-s: 12px;
-  --spacing-m: 16px;
-  --spacing-l: 24px;
-  --spacing-xl: 32px;
-  --spacing-2xl: 48px;
-  --spacing-3xl: 64px;
-  --spacing-4xl: 96px;
+  --spacing-xs: var(--s-8);
+  --spacing-s: var(--s-12);
+  --spacing-m: var(--s-16);
+  --spacing-l: var(--s-24);
+  --spacing-xl: var(--s-32);
+  --spacing-3xl: var(--s-64);
 
-  --border-thin: 1.5px;
-  --border-medium: 2px;
-  --border-thick: 3px;
+  --border-thin: var(--s-1-5);
+  --border-medium: var(--s-2);
 
-  --shadow-button: 0px 8px 24px rgba(14, 23, 56, 0.08);
+  --shadow-button: 0 var(--s-8) var(--s-24) rgba(14, 23, 56, 0.08);
 }
-

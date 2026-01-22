@@ -1,65 +1,65 @@
-.h1_main {
+.h1-main {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-display);
-  font-weight: var(--h1-mob-weight);
-  font-size: var(--h1-mob-size);
-  line-height: var(--h1-mob-line);
+  font-weight: var(--h1-weight);
+  font-size: var(--h1-size-mob);
+  line-height: var(--h1-line-mob);
 }
 
-.h2_main {
+.h2-main {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-display);
-  font-weight: var(--h2-mob-weight);
-  font-size: var(--h2-mob-size);
-  line-height: var(--h2-mob-line);
+  font-weight: var(--h2-weight);
+  font-size: var(--h2-size-mob);
+  line-height: var(--h2-line-mob);
 }
 
-.h3_main {
+.h3-main {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-display);
-  font-weight: var(--h3-mob-weight);
-  font-size: var(--h3-mob-size);
-  line-height: var(--h3-mob-line);
+  font-weight: var(--h3-weight);
+  font-size: var(--h3-size-mob);
+  line-height: var(--h3-line-mob);
 }
 
 @media (min-width: 704px) {
-  .h1_main {
-    font-size: var(--h1-tab-size);
-    line-height: var(--h1-tab-line);
+  .h1-main {
+    font-size: var(--h1-size-tab);
+    line-height: var(--h1-line-tab);
   }
 
-  .h2_main {
-    font-size: var(--h2-tab-size);
-    line-height: var(--h2-tab-line);
+  .h2-main {
+    font-size: var(--h2-size-tab);
+    line-height: var(--h2-line-tab);
   }
 
-  .h3_main {
-    font-size: var(--h3-tab-size);
-    line-height: var(--h3-tab-line);
+  .h3-main {
+    font-size: var(--h3-size-tab);
+    line-height: var(--h3-line-tab);
   }
 }
 
 @media (min-width: 1024px) {
-  .h1_main {
-    font-size: var(--h1-desk-size);
-    line-height: var(--h1-desk-line);
+  .h1-main {
+    font-size: var(--h1-size-desk);
+    line-height: var(--h1-line-desk);
   }
 
-  .h2_main {
-    font-size: var(--h2-desk-size);
-    line-height: var(--h2-desk-line);
+  .h2-main {
+    font-size: var(--h2-size-desk);
+    line-height: var(--h2-line-desk);
   }
 
-  .h3_main {
-    font-size: var(--h3-desk-size);
-    line-height: var(--h3-desk-line);
+  .h3-main {
+    font-size: var(--h3-size-desk);
+    line-height: var(--h3-line-desk);
   }
 }
 
-.text_body {
+.text-body {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-ui);
@@ -69,7 +69,7 @@
   letter-spacing: 0;
 }
 
-.text_small {
+.text-small {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-ui);
@@ -79,7 +79,7 @@
   letter-spacing: 0;
 }
 
-.label_mono {
+.label-mono {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-mono);
@@ -90,7 +90,7 @@
   text-transform: uppercase;
 }
 
-.meta_mono {
+.meta-mono {
   margin: 0;
   color: var(--color-ink);
   font-family: var(--font-mono);

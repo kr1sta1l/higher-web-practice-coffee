@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.querySelector('.header__mobile-toggle');
-    const mobileMenu = document.querySelector('.header__mobile-menu');
-    const mobileMenuLinks = document.querySelectorAll('.header__mobile-menu-item a');
+    const headerMenu = document.querySelector('.header-menu');
+    const menuLinks = document.querySelectorAll('.header-menu__item a');
 
-    if (!toggleButton || !mobileMenu) {
+    if (!toggleButton || !headerMenu) {
         return;
     }
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         toggleButton.setAttribute('aria-expanded', 'true');
         toggleButton.setAttribute('aria-label', 'Закрыть меню');
-        mobileMenu.setAttribute('aria-hidden', 'false');
+        headerMenu.setAttribute('aria-hidden', 'false');
 
         document.body.style.overflow = 'hidden';
         document.body.style.position = 'fixed';
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeMenu() {
         toggleButton.setAttribute('aria-expanded', 'false');
         toggleButton.setAttribute('aria-label', 'Открыть меню');
-        mobileMenu.setAttribute('aria-hidden', 'true');
+        headerMenu.setAttribute('aria-hidden', 'true');
 
         document.body.style.overflow = '';
         document.body.style.position = '';
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     toggleButton.addEventListener('click', toggleMenu);
 
-    mobileMenuLinks.forEach(link => {
+    menuLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('click', function(event) {
         if (
             toggleButton.getAttribute('aria-expanded') === 'true' &&
-            !mobileMenu.contains(event.target) &&
+            !headerMenu.contains(event.target) &&
             !toggleButton.contains(event.target)
         ) {
             closeMenu();

@@ -1,37 +1,31 @@
 .button {
-
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: var(--spacing-xs);
   box-sizing: border-box;
-
   border: none;
-
   border-radius: var(--radius-card);
   outline: none;
-
   font-family: var(--font-ui);
   font-weight: var(--button-weight);
   font-size: var(--button-size);
   font-style: normal;
   line-height: var(--button-line);
   letter-spacing: var(--button-spacing);
-
   transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-
   cursor: pointer;
 }
 
 .button--size-m {
-  height: 44px;
-  padding: 14px var(--spacing-m);
+  height: var(--s-44);
+  padding: var(--s-14) var(--spacing-m);
 }
 
 .button--size-l {
-  height: 52px;
-  padding: var(--spacing-m) 20px;
+  height: var(--s-52);
+  padding: var(--spacing-m) var(--s-20);
 }
 
 .button--primary {
@@ -47,7 +41,7 @@
 .button--primary:focus {
   box-shadow: var(--shadow-button);
   outline: var(--border-medium) solid var(--color-cobalt);
-  outline-offset: 2px;
+  outline-offset: var(--s-2);
   background: rgba(30, 64, 255, 0.8);
 }
 
@@ -67,7 +61,7 @@
   border: var(--border-thin) solid var(--color-cobalt);
   box-shadow: var(--shadow-button);
   outline: var(--border-medium) solid var(--color-cobalt);
-  outline-offset: 2px;
+  outline-offset: var(--s-2);
   background: rgba(30, 64, 255, 0.1);
 }
 

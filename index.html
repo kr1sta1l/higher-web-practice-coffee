@@ -8,79 +8,39 @@
     <title>Такт-кофе</title>
     <link
       rel="stylesheet"
-      href="./css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="./css/variables.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/text.css" />
-    <link
-      rel="stylesheet"
-      href="./css/common.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/header.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/buttons.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/item_list.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/advantage_cards.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/product_card.css" />
-    <link
-      rel="stylesheet"
-      href="./css/pages/home.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/accordion.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/footer.css" />
+      href="./css/main/main-home.css" />
   </head>
   <body>
-    <header class="content_container">
-      <div class="header_menu_container">
+    <header class="content-container">
+      <div class="header-menu-container">
         <a class="header__logo-link" href="./index.html">
           <img class="header__logo" src="./assets/images/logo.png" alt="Логотип Такт-кофе" />
         </a>
         <nav>
-          <ul class="header_menu">
-            <li class="header_menu__item"><a href="./menu.html">Меню</a></li>
-            <li class="header_menu__item"><a href="./promotions.html">Акции</a></li>
-            <li class="header_menu__item"><a href="./contacts.html">Контакты</a></li>
+          <ul class="header-menu" aria-hidden="true">
+            <li class="header-menu__item header-menu__item--home header-menu__active-item"><a href="./index.html">Главная</a></li>
+            <li class="header-menu__item"><a href="./menu.html">Меню</a></li>
+            <li class="header-menu__item"><a href="./promotions.html">Акции</a></li>
+            <li class="header-menu__item"><a href="./contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <button class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
-          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--burger" src="./assets/images/icons/burger.svg" alt="" />
-          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--close" src="./assets/images/icons/close.svg" alt="" />
+        <button type="button" class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--burger" src="./assets/images/icons/burger.svg" alt="Открыть меню" />
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--close" src="./assets/images/icons/close.svg" alt="Закрыть меню" />
         </button>
       </div>
-      <nav class="header__mobile-menu" aria-hidden="true">
-        <ul class="header__mobile-menu-list">
-          <li class="header__mobile-menu-item"><a href="./index.html">Главная</a></li>
-          <li class="header__mobile-menu-item"><a href="./menu.html">Меню</a></li>
-          <li class="header__mobile-menu-item"><a href="./promotions.html">Акции</a></li>
-          <li class="header__mobile-menu-item"><a href="./contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
-      <div class="content_container quick_order_container">
-        <div class="quick_order_content">
-          <h1 class="h1_main">Такт-кофе</h1>
-          <h2 class="h2_main quick_order_h2">Экстракция под метроном.</h2>
-          <a href="./menu.html" class="button button--primary button--size-l order_button link-as-button">Выбрать напиток</a>
+      <div class="content-container quick-order-container">
+        <div class="quick-order-content">
+          <h1 class="h1-main">Такт-кофе</h1>
+          <h2 class="h2-main quick-order-h2">Экстракция под метроном.</h2>
+          <a href="./menu.html" class="button button--primary button--size-l order-button link-as-button">Выбрать напиток</a>
         </div>
-        <div class="quick_order_image">
+        <div class="quick-order-image">
           <img
-            class="main_image"
+            class="main-image"
             src="./assets/images/coffee_cycle_blueprint.png"
             alt="Декоративная иллюстрация в стиле технического чертежа: круговой цикл
               приготовления кофе из зёрен, кофемолки, рожка, чашки и кофемашины
@@ -88,130 +48,130 @@
         </div>
       </div>
 
-      <div class="advantages_container content_container">
-        <h2 class="h2_main">Почему к нам</h2>
-        <div class="advantages_list">
-          <div class="advantage_item">
-            <div class="advantage_item__image_container">
-              <img class="advantage_item__image" src="./assets/images/advantages/advantage_specification.png" alt="Спецификация стабильности">
+      <div class="advantages-container content-container">
+        <h2 class="h2-main">Почему к нам</h2>
+        <div class="advantages-list">
+          <article class="advantage-item">
+            <div class="advantage-item__image-container">
+              <img class="advantage-item__image" src="./assets/images/advantages/advantage_specification.png" alt="Спецификация стабильности">
             </div>
-            <div class="advantage_item__content">
-              <h3 class="h3_main">Спецификация cтабильности</h3>
-              <p class="text_body">Калибруем помол и рецепты дважды <span class="text_break">в день.</span></p>
+            <div class="advantage-item__content">
+              <h3 class="h3-main">Спецификация cтабильности</h3>
+              <p class="text-body">Калибруем помол и рецепты дважды в день.</p>
             </div>
-          </div>
-          <div class="advantage_item">
-            <div class="advantage_item__image_container">
-              <img class="advantage_item__image" src="./assets/images/advantages/advantage_small_parties.png" alt="Малые партии обжарки">
+          </article>
+          <article class="advantage-item">
+            <div class="advantage-item__image-container">
+              <img class="advantage-item__image" src="./assets/images/advantages/advantage_small_parties.png" alt="Малые партии обжарки">
             </div>
-            <div class="advantage_item__content">
-              <h3 class="h3_main">Малые партии обжарки</h3>
-              <p class="text_body">Обновляем зёрна еженедельно, ведём профили и даты. Без «усталого» кофе.</p>
+            <div class="advantage-item__content">
+              <h3 class="h3-main">Малые партии обжарки</h3>
+              <p class="text-body">Обновляем зёрна еженедельно, ведём профили и даты. Без «усталого» кофе.</p>
             </div>
-          </div>
-          <div class="advantage_item">
-            <div class="advantage_item__image_container">
-              <img class="advantage_item__image" src="./assets/images/advantages/advantage_tempo.png" alt="Темп обслуживания">
+          </article>
+          <article class="advantage-item">
+            <div class="advantage-item__image-container">
+              <img class="advantage-item__image" src="./assets/images/advantages/advantage_tempo.png" alt="Темп обслуживания">
             </div>
-            <div class="advantage_item__content">
-              <h3 class="h3_main">Темп обслуживания</h3>
-              <p class="text_body">Утренний поток отрабатываем <span class="text_break">по регламенту. Средняя выдача — </span><span class="text_break"></span>до 5 минут, чек-лист на баре.</span></p>
+            <div class="advantage-item__content">
+              <h3 class="h3-main">Темп обслуживания</h3>
+              <p class="text-body">Утренний поток отрабатываем по регламенту. Средняя выдача — до 5 минут, чек-лист на баре.</p>
             </div>
-          </div>
+          </article>
         </div>
       </div>
 
-      <div class="content_container content_container__next_section">
-        <h2 class="h2_main">Хиты недели</h2>
-        <div class="hits_list">
-          <div class="product_card">
-            <div class="product_card__image_container">
-              <img class="product_item__image" src="./assets/images/products/espresso/cappuccino.png" alt="Капучино">
+      <div class="content-container content-container__next-section">
+        <h2 class="h2-main">Хиты недели</h2>
+        <div class="hits-list">
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-item__image" src="./assets/images/products/espresso/cappuccino.png" alt="Капучино">
             </div>
-            <div class="product_card__content">
-              <h3 class="h3_main">Капучино</h3>
-              <p class="label_mono">S 200 мл · M 300 · L 400</p>
+            <div class="product-card__content">
+              <h3 class="h3-main">Капучино</h3>
+              <p class="label-mono">S 200 мл · M 300 · L 400</p>
             </div>
-            <div class="short_info_list__container">
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">DOSE 18 g</p>
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">YIELD 36 g</p>
-            </div>
-          </div>
-
-          <div class="product_card">
-            <div class="product_card__image_container">
-              <img class="product_item__image" src="./assets/images/products/espresso/flat_white.png" alt="Флэт уайт">
-            </div>
-            <div class="product_card__content">
-              <h3 class="h3_main">Флэт уайт</h3>
-              <p class="label_mono">250 мл</p>
-            </div>
-            <div class="short_info_list__container">
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">DOSE 18 g</p>
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">YIELD 36 g</p>
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">MICROFOAM</p>
+            <div class="short-info-list__container">
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">DOSE 18 g</p>
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">YIELD 36 g</p>
             </div>
           </div>
 
-          <div class="product_card">
-            <div class="product_card__image_container">
-              <img class="product_item__image" src="./assets/images/products/coffee_filter/filter.png" alt="Фильтр-кофе">
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-item__image" src="./assets/images/products/espresso/flat_white.png" alt="Флэт уайт">
             </div>
-            <div class="product_card__content">
-              <h3 class="h3_main">Фильтр</h3>
-              <p class="label_mono">300 мл</p>
+            <div class="product-card__content">
+              <h3 class="h3-main">Флэт уайт</h3>
+              <p class="label-mono">250 мл</p>
             </div>
-            <div class="short_info_list__container">
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">RATIO 1:16</p>
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">TEMP 92 °C</p>
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">BREW 2:30</p>
+            <div class="short-info-list__container">
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">DOSE 18 g</p>
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">YIELD 36 g</p>
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">MICROFOAM</p>
             </div>
           </div>
 
-          <div class="product_card">
-            <div class="product_card__image_container">
-              <img class="product_item__image" src="./assets/images/products/espresso/americano.png" alt="Американо">
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-item__image" src="./assets/images/products/coffee_filter/filter.png" alt="Фильтр-кофе">
             </div>
-            <div class="product_card__content">
-              <h3 class="h3_main">Американо</h3>
-              <p class="label_mono">S 200 мл · M 300 · L 400</p>
+            <div class="product-card__content">
+              <h3 class="h3-main">Фильтр</h3>
+              <p class="label-mono">300 мл</p>
             </div>
-            <div class="short_info_list__container">
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">ESP 18 g</p>
-              <p class="short_info_list__item short_info_list__item--product_card label_mono">WATER 180–320 ml</p>
+            <div class="short-info-list__container">
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">RATIO 1:16</p>
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">TEMP 92 °C</p>
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">BREW 2:30</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card__image-container">
+              <img class="product-item__image" src="./assets/images/products/espresso/americano.png" alt="Американо">
+            </div>
+            <div class="product-card__content">
+              <h3 class="h3-main">Американо</h3>
+              <p class="label-mono">S 200 мл · M 300 · L 400</p>
+            </div>
+            <div class="short-info-list__container">
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">ESP 18 g</p>
+              <p class="short-info-list__item short-info-list__item--product-card label-mono">WATER 180–320 ml</p>
             </div>
           </div>
 
         </div>
       </div>
 
-      <div class="content_container about_us_container">
-        <div class="about_us__content">
-          <h2 class="h2_main">О нас</h2>
-          <p class="text_body about_us__text">
+      <div class="content-container about-us-container">
+        <div class="about-us__content">
+          <h2 class="h2-main">О нас</h2>
+          <p class="text-body about-us__text">
             Мы относимся к приготовлению как к инженерной задаче: измеряем, записываем, повторяем. В каждой карте напитка — доза, выход, температура и время. Журнал варок хранится рядом с гриндером, а профили обжарки — на стенде.
           </p>
-          <p class="text_body about_us__text">
-            Нам важна прозрачность. Мы обжариваем малыми партиями, помечаем даты <span class="text_break">и не держим кофе дольше срока. Меню короткое, а бариста объяснит любой шаг. </span><span class="text_break">Если вы любите вариативность — подберём режим под ваш темп.</span>
+          <p class="text-body about-us__text">
+            Нам важна прозрачность. Мы обжариваем малыми партиями, помечаем даты и не держим кофе дольше срока. Меню короткое, а бариста объяснит любой шаг. Если вы любите вариативность — подберём режим под ваш темп.
           </p>
-          <div class="short_info_list__container short_info_list__container--home">
-            <p class="short_info_list__item short_info_list__item--home label_mono">SCA 82+</p>
-            <p class="short_info_list__item short_info_list__item--home label_mono">OPEN RECIPES</p>
-            <p class="short_info_list__item short_info_list__item--home label_mono">BREW LOG</p>
-            <p class="short_info_list__item short_info_list__item--home label_mono">SMALL BATCH</p>
+          <div class="short-info-list__container short-info-list__container--home">
+            <p class="short-info-list__item short-info-list__item--home label-mono">SCA 82+</p>
+            <p class="short-info-list__item short-info-list__item--home label-mono">OPEN RECIPES</p>
+            <p class="short-info-list__item short-info-list__item--home label-mono">BREW LOG</p>
+            <p class="short-info-list__item short-info-list__item--home label-mono">SMALL BATCH</p>
           </div>
         </div>
-        <div class="about_us__image_container">
-          <img class="about_us__image" src="./assets/images/coffee_making_process.png" alt="Схема процесса изготовления кофе">
+        <div class="about-us__image-container">
+          <img class="about-us__image" src="./assets/images/coffee_making_process.png" alt="Схема процесса изготовления кофе">
         </div>
       </div>
 
-      <div class="content_container content_container__next_section">
-        <h2 class="h2_main">Ответы на вопросы</h2>
+      <div class="content-container content-container__next-section">
+        <h2 class="h2-main">Ответы на вопросы</h2>
         <div class="accordion accordion--faq">
           <div class="accordion__item">
-              <button 
-                  class="accordion__button text_body"
+              <button type="button"
+                  class="accordion__button text-body"
                   aria-expanded="false"
                   aria-controls="accordion-panel-home-0"
                   id="accordion-button-home-0"
@@ -224,13 +184,13 @@
                   aria-labelledby="accordion-button-home-0"
                   id="accordion-panel-home-0"
               >
-                  <p class="text_small">Овсяное +30 ₽, кокос/миндаль +40 ₽.</p>
+                  <p class="text-small">Овсяное +30 ₽, кокос/миндаль +40 ₽.</p>
               </div>
           </div>
 
           <div class="accordion__item">
-              <button 
-                  class="accordion__button text_body"
+              <button type="button"
+                  class="accordion__button text-body"
                   aria-expanded="false"
                   aria-controls="accordion-panel-home-1"
                   id="accordion-button-home-1"
@@ -243,13 +203,13 @@
                   aria-labelledby="accordion-button-home-1"
                   id="accordion-panel-home-1"
               >
-                  <p class="text_small">Да, вода и миска у стойки.</p>
+                  <p class="text-small">Да, вода и миска у стойки.</p>
               </div>
           </div>
 
           <div class="accordion__item">
-              <button 
-                  class="accordion__button text_body"
+              <button type="button"
+                  class="accordion__button text-body"
                   aria-expanded="false"
                   aria-controls="accordion-panel-home-2"
                   id="accordion-button-home-2"
@@ -262,13 +222,13 @@
                   aria-labelledby="accordion-button-home-2"
                   id="accordion-panel-home-2"
               >
-                  <p class="text_small">Да, розетки у стены, Wi-Fi открыт.</p>
+                  <p class="text-small">Да, розетки у стены, Wi-Fi открыт.</p>
               </div>
           </div>
 
           <div class="accordion__item">
-              <button 
-                  class="accordion__button text_body"
+              <button type="button"
+                  class="accordion__button text-body"
                   aria-expanded="false"
                   aria-controls="accordion-panel-home-3"
                   id="accordion-button-home-3"
@@ -281,13 +241,13 @@
                   aria-labelledby="accordion-button-home-3"
                   id="accordion-panel-home-3"
               >
-                  <p class="text_small">С 8:00 до 11:00 тише, после — город в темпе.</p>
+                  <p class="text-small">С 8:00 до 11:00 тише, после — город в темпе.</p>
               </div>
           </div>
 
           <div class="accordion__item">
-              <button 
-                  class="accordion__button text_body"
+              <button type="button"
+                  class="accordion__button text-body"
                   aria-expanded="false"
                   aria-controls="accordion-panel-home-4"
                   id="accordion-button-home-4"
@@ -300,13 +260,13 @@
                   aria-labelledby="accordion-button-home-4"
                   id="accordion-panel-home-4"
               >
-                  <p class="text_small">−10 ₽ и спасибо планете.</p>
+                  <p class="text-small">−10 ₽ и спасибо планете.</p>
               </div>
           </div>
 
           <div class="accordion__item">
-              <button 
-                  class="accordion__button text_body"
+              <button type="button"
+                  class="accordion__button text-body"
                   aria-expanded="false"
                   aria-controls="accordion-panel-home-5"
                   id="accordion-button-home-5"
@@ -319,18 +279,18 @@
                   aria-labelledby="accordion-button-home-5"
                   id="accordion-panel-home-5"
               >
-                  <p class="text_small">Карта/QR/наличные.</p>
+                  <p class="text-small">Карта/QR/наличные.</p>
               </div>
           </div>
         </div> 
       </div>
     </main>
 
-    <footer class="content_container">
-      <nav class="footer_menu_container">
-        <a class="footer_menu__item text_small" href="./contacts.html#addresses">Адреса/часы</a>
-        <a class="footer_menu__item text_small" href="./contacts.html#contact">Быстрые ссылки</a>
-        <a class="footer_menu__item text_small" href="#">Копирайт</a>
+    <footer class="content-container">
+      <nav class="footer-menu-container">
+        <a class="footer-menu__item text-small" href="./contacts.html#addresses">Адреса/часы</a>
+        <a class="footer-menu__item text-small" href="./contacts.html#contact">Быстрые ссылки</a>
+        <a class="footer-menu__item text-small" href="#">Копирайт</a>
       </nav>
     </footer>
     <script src="./js/components/accordion.js"></script>

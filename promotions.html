@@ -8,115 +8,88 @@
     <title>Акции</title>
     <link
       rel="stylesheet"
-      href="./css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="./css/variables.css" />
-    <link
-      rel="stylesheet"
-      href="./css/common.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/text.css" />
-    <link
-      rel="stylesheet"
-      href="./css/pages/promotions.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/header.css" />
-    <link
-      rel="stylesheet"
-      href="./css/components/footer.css" />
+      href="./css/main/main-promotions.css" />
   </head>
   <body>
-    <header class="content_container">
-      <div class="header_menu_container">
+    <header class="content-container">
+      <div class="header-menu-container">
         <a class="header__logo-link" href="./index.html">
           <img class="header__logo" src="./assets/images/logo.png" alt="Логотип Такт-кофе" />
         </a>
         <nav>
-          <ul class="header_menu">
-            <li class="header_menu__item"><a href="./menu.html">Меню</a></li>
-            <li class="header_menu__item header_menu__active_item"><a href="./promotions.html">Акции</a></li>
-            <li class="header_menu__item"><a href="./contacts.html">Контакты</a></li>
+          <ul class="header-menu" aria-hidden="true">
+            <li class="header-menu__item header-menu__item--home"><a href="./index.html">Главная</a></li>
+            <li class="header-menu__item"><a href="./menu.html">Меню</a></li>
+            <li class="header-menu__item header-menu__active-item"><a href="./promotions.html">Акции</a></li>
+            <li class="header-menu__item"><a href="./contacts.html">Контакты</a></li>
           </ul>
         </nav>
-        <button class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
-          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--burger" src="./assets/images/icons/burger.svg" alt="" />
-          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--close" src="./assets/images/icons/close.svg" alt="" />
+        <button type="button" class="header__mobile-toggle" aria-label="Открыть меню" aria-expanded="false">
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--burger" src="./assets/images/icons/burger.svg" alt="Открыть меню" />
+          <img class="header__mobile-toggle-icon header__mobile-toggle-icon--close" src="./assets/images/icons/close.svg" alt="Закрыть меню" />
         </button>
       </div>
-      <nav class="header__mobile-menu" aria-hidden="true">
-        <ul class="header__mobile-menu-list">
-          <li class="header__mobile-menu-item"><a href="./index.html">Главная</a></li>
-          <li class="header__mobile-menu-item"><a href="./menu.html">Меню</a></li>
-          <li class="header__mobile-menu-item"><a href="./promotions.html">Акции</a></li>
-          <li class="header__mobile-menu-item"><a href="./contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
     </header>
   
-    <main class="content_container">
-      <h1 class="h1_main">Акции</h1>
-      <div class="promotions_container">
-          <button class="promotions_carousel__nav promotions_carousel__nav--prev" aria-label="Предыдущий слайд">
-            <img src="./assets/images/icons/arrow.svg" alt="Предыдущий слайд" />
-          </button>
+    <main class="content-container">
+      <h1 class="h1-main">Акции</h1>
+      <div class="promotions-container">
+        <button type="button" class="promotions-carousel__nav promotions-carousel__nav--prev" aria-label="Предыдущий слайд">
+          <img src="./assets/images/icons/arrow.svg" alt="Предыдущий слайд" />
+        </button>
 
-          <div class="promotions_carousel__slides">
-            <div class="promotions_carousel__slide promotions_carousel__slide--active">
-              <div class="promotions_carousel__slide_image_container">
-                <img
-                src="./assets/images/promo/promo-image1.png" 
-                alt="Промо-акция: Утренний темп -20%" 
-                class="promotions_carousel__image" />
-              </div>
-              <h3 class="h3_main">Утренний темп -20%</h3>
-              <p class="text_body">по будням 8:00-11:00 на эспрессо-бар.</p>
+        <div class="promotions-carousel__slides">
+          <div class="promotions-carousel__slide promotions-carousel__slide--active">
+            <div class="promotions-carousel__slide-image-container">
+              <img
+              src="./assets/images/promo/promo-image1.png" 
+              alt="Промо-акция: Утренний темп -20%" 
+              class="promotions-carousel__image" />
             </div>
-
-            <div class="promotions_carousel__slide">
-              <div class="promotions_carousel__slide_image_container">
-                <img 
-                  src="./assets/images/promo/promo-image2.png" 
-                  alt="Промо-акция: Колдбрю «Вишня» 2-за-1" 
-                  class="promotions_carousel__image" />
-              </div>
-              <h3 class="h3_main">Колдбрю «Вишня» 2-за-1</h3>
-              <p class="text_body">по пятницам, до 17:00.</p>
-            </div>
-
-            <div class="promotions_carousel__slide">
-              <div class="promotions_carousel__slide_image_container">
-                <img 
-                src="./assets/images/promo/promo-image3.png" 
-                alt="Промо-акция: Свой стакан −10 ₽" 
-                class="promotions_carousel__image" />
-              </div>
-              <h3 class="h3_main">Свой стакан −10 ₽</h3>
-              <p class="text_body">каждый день.</p>
-            </div>
-
-            <div class="promotions_carousel__indicators">
-              <button class="promotions_carousel__indicator promotions_carousel__indicator--active" aria-label="Слайд 1"></button>
-              <button class="promotions_carousel__indicator" aria-label="Слайд 2"></button>
-              <button class="promotions_carousel__indicator" aria-label="Слайд 3"></button>
-            </div>
+            <h2 class="h3-main">Утренний темп -20%</h2>
+            <p class="text-body">по будням 8:00-11:00 на эспрессо-бар.</p>
           </div>
 
-          <button class="promotions_carousel__nav promotions_carousel__nav--next" aria-label="Следующий слайд">
-            <img src="./assets/images/icons/arrow.svg" alt="Следующий слайд" />
-          </button>
+          <div class="promotions-carousel__slide">
+            <div class="promotions-carousel__slide-image-container">
+              <img 
+                src="./assets/images/promo/promo-image2.png" 
+                alt="Промо-акция: Колдбрю «Вишня» 2-за-1" 
+                class="promotions-carousel__image" />
+            </div>
+            <h2 class="h3-main">Колдбрю «Вишня» 2-за-1</h2>
+            <p class="text-body">по пятницам, до 17:00.</p>
+          </div>
 
+          <div class="promotions-carousel__slide">
+            <div class="promotions-carousel__slide-image-container">
+              <img 
+              src="./assets/images/promo/promo-image3.png" 
+              alt="Промо-акция: Свой стакан −10 ₽" 
+              class="promotions-carousel__image" />
+            </div>
+            <h2 class="h3-main">Свой стакан −10 ₽</h2>
+            <p class="text-body">каждый день.</p>
+          </div>
+
+          <div class="promotions-carousel__indicators">
+            <button type="button" class="promotions-carousel__indicator promotions-carousel__indicator--active" aria-label="Слайд 1"></button>
+            <button type="button" class="promotions-carousel__indicator" aria-label="Слайд 2"></button>
+            <button type="button" class="promotions-carousel__indicator" aria-label="Слайд 3"></button>
+          </div>
         </div>
+
+        <button type="button" class="promotions-carousel__nav promotions-carousel__nav--next" aria-label="Следующий слайд">
+          <img src="./assets/images/icons/arrow.svg" alt="Следующий слайд" />
+        </button>
       </div>
     </main>
 
-    <footer class="content_container">
-      <nav class="footer_menu_container">
-        <a class="footer_menu__item text_small" href="./contacts.html#addresses">Адреса/часы</a>
-        <a class="footer_menu__item text_small" href="./contacts.html#contact">Быстрые ссылки</a>
-        <a class="footer_menu__item text_small" href="#">Копирайт</a>
+    <footer class="content-container">
+      <nav class="footer-menu-container">
+        <a class="footer-menu__item text-small" href="./contacts.html#addresses">Адреса/часы</a>
+        <a class="footer-menu__item text-small" href="./contacts.html#contact">Быстрые ссылки</a>
+        <a class="footer-menu__item text-small" href="#">Копирайт</a>
       </nav>
     </footer>
     <script src="./js/components/promotions.js"></script>
